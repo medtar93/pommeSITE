@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS document */
+
+body{
+    font-family: 'PT Sans', sans-serif;
+    background-color: #ccff99; /* ou alors #dea */
+    color: #93500;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+
+}
+#conteneur{
+    width: 770px;
+    margin:0 auto; /* marge automatique qui centre la div aprés l'avoir remonté le plus haut possible dans l'afffichage */
+    border: 2px solid #ab4; /* bordure extérieur */
+    background: #fff;
+    text-align: left;
+}
+/* La propriété display et la valeur block block transforment le lien a inline en élément de type block. on peut donc aussi lui attribuer des propriétés de taille ; on postionne l'image de fond qui a les mêmes dimensions que le cadre ainso créé. */
+#header {
+    height: 250px;
+    background: url(../img/apple.jpg) no-repeat left top;
+    margin: 0;
+}
+#header a {
+    width: 400px;
+    height: 70px;
+    display: block;
+    background: url(../img/bg_hp.gif) no-repeat;
+    position: relative;
+    left: 350px;
+    top: 15px;
+    text-indent: -5000px;
+}
+/* Pour la navigation */
+#nav li {
+    display: inline;
+	list-style: none;
+
+}
+ul{
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    background: url(../img/bg_menu.gif) repeat-x 0 -25px;
+}
+#nav a {
+	display:inline-block;
+    margin: 0 30px;
+    font-size: 1em; /*  taille du texte */
+    font-weight: bold;
+    letter-spacing: 2px; /* espacement entre les lettres */
+    color: #fff;
+    float: left; 
+    border-right: 2px solid #ccff99;
+}
+#nav a:hover{
+    background: url(../img/bg_menu.gif) repeat-x 0 0px; /* on décale l'image de fontau passage de la souris */
+} 
+#nav {
+	padding: 0; margin: 0;
+	text-align: center; /* centrer le texte */
+}
+
+/* le contenu principale */
+#contenu{
+    padding: 0 30px 0 100px;
+    background: url(../img/bg_page.gif) no-repeat;
+    background-position: 15px 10px;
+}
+#contenu h2 {
+    border-bottom: 1px solid #9b2;
+    color: #9b2;
+    padding-left: 25px;
+    background: url(../img/little_apple.gif) no-repeat left bottom;
+}
+#contenu h3{
+    margin-left: 15px;
+    padding-left: 5px;
+    border-bottom: 1px solid #9b2;
+    border-left: 1px solid #9b2;
+    color: #9b2;
+}
+
+#contenu p {
+    line-height: 1.7em;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+blockquote{
+        border: 5px solid #9b2;
+        border-radius: 100px;
+        padding: 25px ;
+    }
+
+}
+footer{
+    background: #ab4;
+}
+footer p{
+    margin: 0;
+    padding: 10px;
+    line-height: 20px;
+    text-align: left;
+    background-color: #8a0;
+}
